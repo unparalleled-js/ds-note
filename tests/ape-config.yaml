@@ -4,6 +4,8 @@ plugins:
 dependencies:
   - name: dsnote
     local: ../
+    # TODO: Can remove line below once ape #861 is released
+    contracts_folder: src
 
 solidity:
   import_remapping:

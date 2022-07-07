@@ -21,7 +21,7 @@ contract DSNoteTest is DSNote {
     function test_1() public { this.foo(1); }
     function test_2() public { this.foo(1, 2); }
     function test_3() public { this.foo(1, 2, 3); }
-    function test_4() public { this.bar.value(uint(0x1234))(); }
+    function test_4() public { this.bar {value: uint(0x1234)}; }
 
     function foo() public note {}
     function foo(uint a) public note { a; }
