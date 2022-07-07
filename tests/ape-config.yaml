@@ -1,0 +1,10 @@
+plugins:
+  - name: solidity
+
+dependencies:
+  - name: dsnote
+    local: ../
+
+solidity:
+  import_remapping:
+    - "@dsnote=dsnote"
